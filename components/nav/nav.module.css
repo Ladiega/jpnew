@@ -2,28 +2,33 @@
     margin:0;
     padding:0;
 }
-
+/*.nav_container{
+   margin-left:40vw;
+}*/
 .nav_container ul{
    
     display:flex;
-   text-decoration:none;
+    text-decoration:none;
     list-style-type:none;
     margin:0;
     padding:0;
     background-color:transparent;
   
 }
+
 .wSkull{
+    margin-left:5vw;
     
 }
 .wInsta{
+    margin-left:55vw;
     
 }
 .wTwitter{
     
 }
 .wHam{
-    
+    margin-left:7vw;
 }
 
 
