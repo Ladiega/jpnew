@@ -2,7 +2,7 @@ import styles from './nav.module.css'
 import Link from 'next/link'
 
 
-import Ham from '../ham/index'
+import Ham2 from '../ham2/index'
 
 import Image from 'next/image'
 import wSkull from '../../public/img/icons/wSkull.svg'
@@ -56,7 +56,7 @@ export default function Nav(){
                     <li className={styles.wHam}>
                         <Link href="/">
                             <a>
-                               <Ham/>
+                               <Ham2/>
                             </a>
                         </Link>
                         
