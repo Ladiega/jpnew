@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+
 
 import Script from 'next/script'
 
@@ -97,8 +97,8 @@ export default function Nav2 (){
          
          .button-menu {
            z-index: 200;
-           width: 40px;
-           height: 40px;
+           width: 17px;
+           height: 23px;
            border: none;
            display: flex;
            background: none;
@@ -140,28 +140,21 @@ export default function Nav2 (){
         `}
 
         </style>
-        <Script id="nav2" strategy="lazyOnload">
+        <Script id="nav2" strategy='lazyOnload' >
         {`
 
-//  seleccionamos los dos elementos que serán clickables
+
 
 const toggleButton = document.getElementById("button-menu");
 const navWrapper = document.getElementById("nav");
 
-/* 
-  cada ves que se haga click en el botón 
-  agrega y quita las clases necesarias 
-  para que el menú se muestre.
-*/
+
 toggleButton.addEventListener("click", () => {
   toggleButton.classList.toggle("close");
   navWrapper.classList.toggle("show");
 });
 
-/* 
-  Cuándo se haga click fuera del contenedor de enlaces 
-  el menú debe esconderse.
-*/
+
 
 navWrapper.addEventListener("click", e => {
   if (e.target.id === "nav") {

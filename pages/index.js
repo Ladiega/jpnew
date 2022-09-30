@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 
-
+import Bio from '../components/sectionOne/index'
 import Nav from '../components/nav/index'
 import styles from '../styles/Home.module.css'
 
@@ -29,6 +29,7 @@ export default function Home() {
         <div className={styles.nav_container}>
           <Nav className={styles.nav}/>
         </div>
+        <Bio/>
         
       </main>
       <style jsx>{`
